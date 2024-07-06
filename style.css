@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(98, 140, 57, 0.689);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 50px;
+    margin: 20px 30px  30px 30px;
+    height: 50px;
+    color:aliceblue;
+   
+}
+
+.container{
+    background-color:rgba(89, 69, 69, 0.359);
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.game{
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    width: 18vmin;
+    border: none;
+    border-radius: 1.3rem;
+    height: 18vmin;
+    box-shadow: 6px 7px 6px -5px rgba(0,0,0,0.62);
+    font-size: 7vmin;
+    color: rgb(169, 84, 84);
+    background-color:white ;
+}
+
+#reset-btn,#new-btn{
+    padding: 1rem;
+    color: white;
+    background-color: rgb(52, 52, 52);
+    border: none;
+    border-radius: 1.2rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+#reset-btn.hide{
+    display: none;
+}
+
+#msg{
+    padding: 1rem;
+    color: white;
+    background-color: rgb(52, 52, 52);
+    border: none;
+    border-radius: 1.2rem;
+    margin: 2rem;
+    cursor: pointer;
+}    
+/* .msg-container {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vmin;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    z-index: 100;
+    transition: transform 0.5s ease, opacity 0.5s ease, z-index 0s 0s;
+} 
+
+ .msg-container.hide {
+    transform: translate(-50%, -50%) translateY(-100%);
+    opacity: 0;
+    z-index: -1;
+    transition: transform 0.5s ease, opacity 0.5s ease, z-index 0s 0s;
+
+}
+ */
+
+ .msg-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vmin;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+    z-index: 100;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.msg-container.hide {
+    opacity: 0;
+    transform: translate(-50%, -150%);
+    transition: opacity 1s ease, transform 1s ease;
+    z-index: -1;
+}
