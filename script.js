@@ -91,3 +91,5 @@ function checkWinner(){
 
 resetbtn.addEventListener("click",resetGame)
 newGameBtn.addEventListener("click",resetGame)
+
+
